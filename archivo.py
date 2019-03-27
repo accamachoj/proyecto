@@ -11,7 +11,7 @@ db = DBHelper()
 #db.crearTablaReserva()
 #db.insertarlogin()
 #db.quemada()
-
+'''
 @app.route("/")
 def inicio():    
     #retorno = db.leer("demo1")
@@ -19,13 +19,13 @@ def inicio():
     #diccionario[retorno[0]] = [retorno[1], retorno[2]]
     print(diccionario)
     return render_template('index.html', dict=diccionario)
-
+'''
 @app.route("/tabla")
 def index():
     return render_template('../index.html')
 
 
-@app.route("/test", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def test():
 
     base = db.todos()
@@ -37,16 +37,15 @@ def test():
         return render_template("test.html", dict = diccionario)
     elif request.method == 'POST':
         if "user" in request.form:
+            print(request.form['id'])
             db.update(request.form['user'], request.form['id'], request.form['estado'])
             print("hola desde el post: " + request.form["user"])
         if "uno" in request.form:
-            nombre = request.form['uno']  
+            nombre = request.form['uno']
+            db.insertarlogin(request.form['uno'], request.form['dos']) 
+            print(request.form['uno'], request.form['dos'])
             #d = {'demo1' : ['liss', 'ocupado'], 'demo2' : ['liss', 'ocupado']}
             return render_template("index.html" , nombre = nombre, dict = diccionario)
     return '200'
-
-
-
-
 
 app.run(debug=True, port=8000)

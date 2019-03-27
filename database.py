@@ -18,10 +18,10 @@ class DBHelper():
         conn.commit()
         conn.close()
 
-    def insertarlogin(self):
+    def insertarlogin(self, _usuario, _contrasenia):
         conn = sqlite3.connect('data.db')
         c = conn.cursor()
-        c.execute("INSERT INTO login VALUES ('liss', '123456')")
+        c.execute("INSERT INTO login VALUES (?, ?)", [_usuario, _contrasenia])
         conn.commit()
         conn.close()
 

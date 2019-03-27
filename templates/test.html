@@ -5,16 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static', filename='styleas.css')}}">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css">
     
     
+    <h1>RESERVA DE SALONES</h1>
 </head>
 <body>
-    {{dict}}
-    <form method="POST">
-        Uno: <input type="text" name= "uno">
-        Dos: <input type="text" name= "dos">
-        <input type="submit" value="Submit">
-    </form>
+
+        <form method="POST">
+                Usuario: <input type="text" name= "uno">
+                Contraseña: <input type="text" name= "dos">
+                <input type="submit" value="Submit">
+            </form>
+        <table class="tabla">
+
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                </tr>
+        
+                <tr>
+                    <td>6:00am - 8:00am</td>
+                    <td id="demo1">usuario: {{dict.demo1[0]}} estado: {{dict.demo1[1]}}</td>
+                    <td id="demo2">usuario: {{dict.demo2[0]}} estado: {{dict.demo2[1]}}</td>
+                    <td id="demo3">usuario: {{dict.demo3[0]}} estado: {{dict.demo3[1]}}</td>
+                    <td id="demo4">usuario: {{dict.demo4[0]}} estado: {{dict.demo4[1]}}</td>
+                    <td id="demo5">usuario: {{dict.demo5[0]}} estado: {{dict.demo5[1]}}</td>
+                    <td id="demo6">usuario: {{dict.demo6[0]}} estado: {{dict.demo6[1]}}</td>
+                </tr>
+                <tr>
+                    <td>8:00am - 10:00am</td>
+                    <td id="demo7">usuario: {{dict.demo7[0]}} estado: {{dict.demo7[1]}}</td>
+                    <td id="demo8">usuario: {{dict.demo8[0]}} estado: {{dict.demo8[1]}}</td>
+                    <td id="demo9">usuario: {{dict.demo9[0]}} estado: {{dict.demo9[1]}}</td>
+                    <td id="demo10">usuario: {{dict.demo10[0]}} estado: {{dict.demo10[1]}}</td>
+                    <td id="demo11">usuario: {{dict.demo11[0]}} estado: {{dict.demo11[1]}}</td>
+                    <td id="demo12">usuario: {{dict.demo12[0]}} estado: {{dict.demo12[1]}}</td>
+                </tr>
+                <tr>
+                    <td>10:00am - 12:00pm</td>
+                    <td id="demo13">usuario: {{dict.demo13[0]}} estado: {{dict.demo13[1]}}</td>
+                    <td id="demo14">usuario: {{dict.demo14[0]}} estado: {{dict.demo14[1]}}</td>
+                    <td id="demo15">usuario: {{dict.demo15[0]}} estado: {{dict.demo15[1]}}</td>
+                    <td id="demo16">usuario: {{dict.demo16[0]}} estado: {{dict.demo16[1]}}</td>
+                    <td id="demo17">usuario: {{dict.demo17[0]}} estado: {{dict.demo17[1]}}</td>
+                    <td id="demo18">usuario: {{dict.demo18[0]}} estado: {{dict.demo18[1]}}</td>
+                </tr>
+                <tr>
+                    <td>12:00pm - 2:00pm</td>
+                    <td id="demo19">usuario: {{dict.demo19[0]}} estado: {{dict.demo19[1]}}</td>
+                    <td id="demo20">usuario: {{dict.demo20[0]}} estado: {{dict.demo20[1]}}</td>
+                    <td id="demo21">usuario: {{dict.demo21[0]}} estado: {{dict.demo21[1]}}</td>
+                    <td id="demo22">usuario: {{dict.demo22[0]}} estado: {{dict.demo22[1]}}</td>
+                    <td id="demo23">usuario: {{dict.demo23[0]}} estado: {{dict.demo23[1]}}</td>
+                    <td id="demo24">usuario: {{dict.demo24[0]}} estado: {{dict.demo24[1]}}</td>
+                </tr>
+                <tr>
+                    <td>2:00pm - 4:00pm</td>
+                    <td id="demo25">usuario: {{dict.demo25[0]}} estado: {{dict.demo7[1]}}</td>
+                    <td id="demo26">usuario: {{dict.demo26[0]}} estado: {{dict.demo8[1]}}</td>
+                    <td id="demo27">usuario: {{dict.demo27[0]}} estado: {{dict.demo9[1]}}</td>
+                    <td id="demo28">usuario: {{dict.demo28[0]}} estado: {{dict.demo10[1]}}</td>
+                    <td id="demo29">usuario: {{dict.demo29[0]}} estado: {{dict.demo11[1]}}</td>
+                    <td id="demo30">usuario: {{dict.demo30[0]}} estado: {{dict.demo12[1]}}</td>
+                </tr>
+                <tr>
+                    <td>4:00pm - 6:00pm</td>
+                    <td id="demo31">usuario: {{dict.demo31[0]}} estado: {{dict.demo31[1]}}</td>
+                    <td id="demo32">usuario: {{dict.demo32[0]}} estado: {{dict.demo32[1]}}</td>
+                    <td id="demo33">usuario: {{dict.demo33[0]}} estado: {{dict.demo33[1]}}</td>
+                    <td id="demo34">usuario: {{dict.demo34[0]}} estado: {{dict.demo34[1]}}</td>
+                    <td id="demo35">usuario: {{dict.demo35[0]}} estado: {{dict.demo35[1]}}</td>
+                    <td id="demo36">usuario: {{dict.demo36[0]}} estado: {{dict.demo36[1]}}</td>
+                </tr>
+                <tr>
+                    <td>6:00pm - 8:00pm</td>
+                    <td id="demo37">usuario: {{dict.demo37[0]}} estado: {{dict.demo37[1]}}</td>
+                    <td id="demo38">usuario: {{dict.demo38[0]}} estado: {{dict.demo38[1]}}</td>
+                    <td id="demo39">usuario: {{dict.demo39[0]}} estado: {{dict.demo39[1]}}</td>
+                    <td id="demo40">usuario: {{dict.demo40[0]}} estado: {{dict.demo40[1]}}</td>
+                    <td id="demo41">usuario: {{dict.demo41[0]}} estado: {{dict.demo41[1]}}</td>
+                    <td id="demo42">usuario: {{dict.demo42[0]}} estado: {{dict.demo42[1]}}</td>
+                </tr>
+                <tr>
+                    <td>8:00pm - 10:00pm</td>
+                    <td id="demo43">usuario: {{dict.demo43[0]}} estado: {{dict.demo43[1]}}</td>
+                    <td id="demo44">usuario: {{dict.demo44[0]}} estado: {{dict.demo44[1]}}</td>
+                    <td id="demo45">usuario: {{dict.demo45[0]}} estado: {{dict.demo45[1]}}</td>
+                    <td id="demo46">usuario: {{dict.demo46[0]}} estado: {{dict.demo46[1]}}</td>
+                    <td id="demo47">usuario: {{dict.demo47[0]}} estado: {{dict.demo47[1]}}</td>
+                    <td id="demo48">usuario: {{dict.demo48[0]}} estado: {{dict.demo48[1]}}</td>
+                </tr>
+        
+        
+        
+            </table>
+      
+  <!--  {% for key in dict %}
+    <td> {{ dict[key] }}</td>
+    {% endfor %}-->
+    
+
+    
 </body>
 </html>

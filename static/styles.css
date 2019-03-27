@@ -1,0 +1,40 @@
+table {
+    width: 1250px;
+    border: 2px solid;
+    align-self: center;
+    border-collapse: collapse;
+    
+}
+
+table tr{
+    width: 500px;
+    border: 1px solid;
+    border-color: blueviolet;
+    text-align: center;
+}
+table td:hover{
+background-color: gold;
+
+}
+
+table td{
+    height: 50px;
+    border: 2px solid;
+}
+
+h1{
+    color: firebrick;
+    text-align: center;
+    background-color: antiquewhite;
+}
+body{
+    background-color: antiquewhite;
+}
+
+th{
+    background-color: aquamarine;
+    border-collapse: collapse;
+    
+border: 2px solid;
+}
+
