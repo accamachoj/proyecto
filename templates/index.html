@@ -1,158 +1,181 @@
-
 <html>
+
 <head>
-<title>Yo soy una prueba</title>
-<h1>RESERVA DE SALONES</h1>
-<link rel="stylesheet" type="text/css" media="screen" href="{{url_for('static', filename='styleas.css')}}">
+    <title>Yo soy una prueba</title>
+    <h1>RESERVA DE SALONES</h1>
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/styleas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
+
 <body>
-    
-<table class="tabla">
-      
-    <tr>
-        <th>Hora</th>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miercoles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-        <th>Sabado</th>
-    </tr>
-        
-                <tr>
-                <td>6:00am - 8:00am</td>
-                <td id="demo1" onclick="mifuncion1()">Disponible</td>
-                <td id="demo2" onclick="mifuncion2()">Disponible</td>
-                <td id="demo3" onclick="mifuncion3()">Disponible</td>
-                <td id="demo4" onclick="mifuncion4()">Disponible</td>
-                <td id="demo5" onclick="mifuncion5()">Disponible</td>
-                <td id="demo6" onclick="mifuncion6()">Disponible</td>
-                </tr>
-                <tr>
-                <td>8:00am - 10:00am</td>
-                <td id="demo7" onclick="mifuncion7()">Disponible</td>
-                <td id="demo8" onclick="mifuncion8()">Disponible</td>
-                <td id="demo9" onclick="mifuncion9()">Disponible</td>
-                <td id="demo10" onclick="mifuncion10()">Disponible</td>
-                <td id="demo11" onclick="mifuncion11()">Disponible</td>
-                <td id="demo12" onclick="mifuncion12()">Disponible</td>
-                </tr>
-                <tr>
-                <td>10:00am - 12:00pm</td>
-                <td id="demo13" onclick="mifuncion13()">Disponible</td>
-                <td id="demo14" onclick="mifuncion14()">Disponible</td>
-                <td id="demo15" onclick="mifuncion15()">Disponible</td>
-                <td id="demo16" onclick="mifuncion16()">Disponible</td>
-                <td id="demo17" onclick="mifuncion17()">Disponible</td>
-                <td id="demo18" onclick="mifuncion18()">Disponible</td>
-                </tr>
-                <tr>
-                <td>12:00pm - 2:00pm</td>
-                <td id="demo19" onclick="mifuncion19()">Disponible</td>
-                <td id="demo20" onclick="mifuncion20()">Disponible</td>
-                <td id="demo21" onclick="mifuncion21()">Disponible</td>
-                <td id="demo22" onclick="mifuncion22()">Disponible</td>
-                <td id="demo23" onclick="mifuncion23()">Disponible</td>
-                <td id="demo24" onclick="mifuncion24()">Disponible</td>
-                </tr>
-                <tr>
-                <td>2:00pm - 4:00pm</td>
-                <td id="demo25" onclick="mifuncion25()">Disponible</td>
-                <td id="demo26" onclick="mifuncion26()">Disponible</td>
-                <td id="demo27" onclick="mifuncion27()">Disponible</td>
-                <td id="demo28" onclick="mifuncion28()">Disponible</td>
-                <td id="demo29" onclick="mifuncion29()">Disponible</td>
-                <td id="demo30" onclick="mifuncion30()">Disponible</td>
-                </tr>
-                <tr>
-                <td>4:00pm - 6:00pm</td>
-                <td id="demo31" onclick="mifuncion31()">Disponible</td>
-                <td id="demo32" onclick="mifuncion32()">Disponible</td>
-                <td id="demo33" onclick="mifuncion33()">Disponible</td>
-                <td id="demo34" onclick="mifuncion34()">Disponible</td>
-                <td id="demo35" onclick="mifuncion35()">Disponible</td>
-                <td id="demo36" onclick="mifuncion36()">Disponible</td>
-                </tr>
-                <tr>
-                <td>6:00pm - 8:00pm</td>
-                <td id="demo37" onclick="mifuncion37()">Disponible</td>
-                <td id="demo38" onclick="mifuncion38()">Disponible</td>
-                <td id="demo39" onclick="mifuncion39()">Disponible</td>
-                <td id="demo40" onclick="mifuncion40()">Disponible</td>
-                <td id="demo41" onclick="mifuncion41()">Disponible</td>
-                <td id="demo42" onclick="mifuncion42()">Disponible</td>
-                </tr>
-                <tr>
-                <td>8:00pm - 10:00pm</td>
-                <td id="demo43" onclick="mifuncion43()">Disponible</td>
-                <td id="demo44" onclick="mifuncion44()">Disponible</td>
-                <td id="demo45" onclick="mifuncion45()">Disponible</td>
-                <td id="demo46" onclick="mifuncion46()">Disponible</td>
-                <td id="demo47" onclick="mifuncion47()">Disponible</td>
-                <td id="demo48" onclick="mifuncion48()">Disponible</td>
-                </tr>
-               
-        
-        
-            </table>
 
-            <script>
-                function mifuncion1(){
-                    var text1 = document.getElementById("demo1").innerHTML;
-                    if(text1 == "Disponible"){
-    
-                        document.getElementById("demo1").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo1").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion2(){
-                    var text2 = document.getElementById("demo2").innerHTML;
-                    if(text2 == "Disponible"){
-    
-                        document.getElementById("demo2").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo2").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion3(){
-                    var text3 = document.getElementById("demo3").innerHTML;
-                    if(text3 == "Disponible"){
-    
-                        document.getElementById("demo3").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo3").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion4(){
-                    var text4 = document.getElementById("demo4").innerHTML;
-                    if(text4 == "Disponible"){
-    
-                        document.getElementById("demo4").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo4").innerHTML = "Disponible";
-                    } 
-                    }
-                function mifuncion5(){
-                    var text5 = document.getElementById("demo5").innerHTML;
-                    if(text5 == "Disponible"){
-    
-                        document.getElementById("demo5").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo5").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion6(){
-                    var text6 = document.getElementById("demo6").innerHTML;
-                    if(text6 == "Disponible"){
-    
-                        document.getElementById("demo6").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo6").innerHTML = "Disponible";
-                        
-                    }
+    <table class="tabla">
+
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+        </tr>
+
+        <tr>
+            <td>6:00am - 8:00am</td>
+            <td id="demo1" onclick="mifuncion1()">{{dict.demo1[1]}}</td>
+            <td id="demo2" onclick="mifuncion2()">{{dict.demo2[1]}}</td>
+            <td id="demo3" onclick="mifuncion3()">{{dict.demo3[1]}}</td>
+            <td id="demo4" onclick="mifuncion4()">{{dict.demo4[1]}}</td>
+            <td id="demo5" onclick="mifuncion5()">{{dict.demo5[1]}}</td>
+            <td id="demo6" onclick="mifuncion6()">{{dict.demo6[1]}}</td>
+        </tr>
+        <tr>
+            <td>8:00am - 10:00am</td>
+            <td id="demo7" onclick="mifuncion7()">{{dict.demo7[1]}}</td>
+            <td id="demo8" onclick="mifuncion8()">{{dict.demo8[1]}}</td>
+            <td id="demo9" onclick="mifuncion9()">{{dict.demo9[1]}}</td>
+            <td id="demo10" onclick="mifuncion10()">{{dict.demo10[1]}}</td>
+            <td id="demo11" onclick="mifuncion11()">{{dict.demo11[1]}}</td>
+            <td id="demo12" onclick="mifuncion12()">{{dict.demo12[1]}}</td>
+        </tr>
+        <tr>
+            <td>10:00am - 12:00pm</td>
+            <td id="demo13" onclick="mifuncion13()">{{dict.demo13[1]}}</td>
+            <td id="demo14" onclick="mifuncion14()">{{dict.demo14[1]}}</td>
+            <td id="demo15" onclick="mifuncion15()">{{dict.demo15[1]}}</td>
+            <td id="demo16" onclick="mifuncion16()">{{dict.demo16[1]}}</td>
+            <td id="demo17" onclick="mifuncion17()">{{dict.demo17[1]}}</td>
+            <td id="demo18" onclick="mifuncion18()">{{dict.demo18[1]}}</td>
+        </tr>
+        <tr>
+            <td>12:00pm - 2:00pm</td>
+            <td id="demo19" onclick="mifuncion19()">{{dict.demo19[1]}}</td>
+            <td id="demo20" onclick="mifuncion20()">{{dict.demo20[1]}}</td>
+            <td id="demo21" onclick="mifuncion21()">{{dict.demo21[1]}}</td>
+            <td id="demo22" onclick="mifuncion22()">{{dict.demo22[1]}}</td>
+            <td id="demo23" onclick="mifuncion23()">{{dict.demo23[1]}}</td>
+            <td id="demo24" onclick="mifuncion24()">{{dict.demo24[1]}}</td>
+        </tr>
+        <tr>
+            <td>2:00pm - 4:00pm</td>
+            <td id="demo25" onclick="mifuncion25()">{{dict.demo25[1]}}</td>
+            <td id="demo26" onclick="mifuncion26()">{{dict.demo26[1]}}</td>
+            <td id="demo27" onclick="mifuncion27()">{{dict.demo27[1]}}</td>
+            <td id="demo28" onclick="mifuncion28()">{{dict.demo28[1]}}</td>
+            <td id="demo29" onclick="mifuncion29()">{{dict.demo29[1]}}</td>
+            <td id="demo30" onclick="mifuncion30()">{{dict.demo30[1]}}</td>
+        </tr>
+        <tr>
+            <td>4:00pm - 6:00pm</td>
+            <td id="demo31" onclick="mifuncion31()">{{dict.demo31[1]}}</td>
+            <td id="demo32" onclick="mifuncion32()">{{dict.demo32[1]}}</td>
+            <td id="demo33" onclick="mifuncion33()">{{dict.demo33[1]}}</td>
+            <td id="demo34" onclick="mifuncion34()">{{dict.demo34[1]}}</td>
+            <td id="demo35" onclick="mifuncion35()">{{dict.demo35[1]}}</td>
+            <td id="demo36" onclick="mifuncion36()">{{dict.demo36[1]}}</td>
+        </tr>
+        <tr>
+            <td>6:00pm - 8:00pm</td>
+            <td id="demo37" onclick="mifuncion37()">{{dict.demo37[1]}}</td>
+            <td id="demo38" onclick="mifuncion38()">{{dict.demo38[1]}}</td>
+            <td id="demo39" onclick="mifuncion39()">{{dict.demo39[1]}}</td>
+            <td id="demo40" onclick="mifuncion40()">{{dict.demo40[1]}}</td>
+            <td id="demo41" onclick="mifuncion41()">{{dict.demo41[1]}}</td>
+            <td id="demo42" onclick="mifuncion42()">{{dict.demo42[1]}}</td>
+        </tr>
+        <tr>
+            <td>8:00pm - 10:00pm</td>
+            <td id="demo43" onclick="mifuncion43()">{{dict.demo43[1]}}</td>
+            <td id="demo44" onclick="mifuncion44()">{{dict.demo44[1]}}</td>
+            <td id="demo45" onclick="mifuncion45()">{{dict.demo45[1]}}</td>
+            <td id="demo46" onclick="mifuncion46()">{{dict.demo46[1]}}</td>
+            <td id="demo47" onclick="mifuncion47()">{{dict.demo47[1]}}</td>
+            <td id="demo48" onclick="mifuncion48()">{{dict.demo48[1]}}</td>
+        </tr>
+
+
+
+    </table>
+
+    <script>
+        var nom = "{{nombre}}"
+        console.log(nom);
+        function mifuncion1() {
+            var text1 = document.getElementById("demo1").innerHTML;
+            if (text1 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo1", "estado": "Ocupado" });
+                document.getElementById("demo1").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo1[0]}}" || "{{dict.demo1[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo1", "estado": "Disponible" });
+                    document.getElementById("demo1").innerHTML = "Disponible";
+
+            }
+        }
+        }
+        function mifuncion2() {
+            var text2 = document.getElementById("demo2").innerHTML;
+            if (text2 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo2", "estado": "Ocupado" });
+                document.getElementById("demo2").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo2[0]}}" || "{{dict.demo2[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo2", "estado": "Disponible" });
+                document.getElementById("demo2").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion3() {
+            var text3 = document.getElementById("demo3").innerHTML;
+            if (text3 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo3", "estado": "Ocupado" });
+                document.getElementById("demo3").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo3[0]}}" || "{{dict.demo3[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo3", "estado": "Disponible" });
+                document.getElementById("demo3").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion4() {
+            var text4 = document.getElementById("demo4").innerHTML;
+            if (text4 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo4", "estado": "Ocupado" });
+                document.getElementById("demo4").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo4[0]}}" || "{{dict.demo4[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo4", "estado": "Disponible" });
+                    document.getElementById("demo4").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion5() {
+            var text5 = document.getElementById("demo5").innerHTML;
+            if (text5 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo5", "estado": "Ocupado" });
+                document.getElementById("demo5").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo5[0]}}" || "{{dict.demo5[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo5", "estado": "Disponible" });
+                    document.getElementById("demo5").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion6() {
+            var text6 = document.getElementById("demo6").innerHTML;
+            if (text6 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo6", "estado": "Ocupado" });
+                document.getElementById("demo6").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo6[0]}}" || "{{dict.demo6[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo6", "estado": "Disponible" });
+                    document.getElementById("demo6").innerHTML = "Disponible";
                 }
 
+            }
+        }
 
 
 
@@ -161,126 +184,164 @@
 
 
 
-                function mifuncion7(){
-                    var text7 = document.getElementById("demo7").innerHTML;
-                    if(text7 == "Disponible"){
-    
-                        document.getElementById("demo7").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo7").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion8(){
-                    var text8 = document.getElementById("demo8").innerHTML;
-                    if(text8 == "Disponible"){
-    
-                        document.getElementById("demo8").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo8").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion9(){
-                    var text9 = document.getElementById("demo9").innerHTML;
-                    if(text9 == "Disponible"){
-    
-                        document.getElementById("demo9").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo9").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion10(){
-                    var text10 = document.getElementById("demo10").innerHTML;
-                    if(text10 == "Disponible"){
-    
-                        document.getElementById("demo10").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo10").innerHTML = "Disponible";
-                    } 
-                    }
-                function mifuncion11(){
-                    var text11 = document.getElementById("demo11").innerHTML;
-                    if(text11 == "Disponible"){
-    
-                        document.getElementById("demo11").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo11").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion12(){
-                    var text12 = document.getElementById("demo12").innerHTML;
-                    if(text12 == "Disponible"){
-    
-                        document.getElementById("demo12").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo12").innerHTML = "Disponible";
-                        
-                    }
+
+        function mifuncion7() {
+            var text7 = document.getElementById("demo7").innerHTML;
+            if (text7 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo7", "estado": "Ocupado" });
+                document.getElementById("demo7").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo7[0]}}" || "{{dict.demo7[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo7", "estado": "Disponible" });
+                    document.getElementById("demo7").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion8() {
+            var text8 = document.getElementById("demo8").innerHTML;
+            if (text8 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo8", "estado": "Ocupado" });
+                document.getElementById("demo8").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo8[0]}}" || "{{dict.demo8[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo8", "estado": "Disponible" });
+                    document.getElementById("demo8").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion9() {
+            var text9 = document.getElementById("demo9").innerHTML;
+            if (text9 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo9", "estado": "Ocupado" });
+                document.getElementById("demo9").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo9[0]}}" || "{{dict.demo9[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo9", "estado": "Disponible" });
+                    document.getElementById("demo9").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion10() {
+            var text10 = document.getElementById("demo10").innerHTML;
+            if (text10 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo10", "estado": "Ocupado" });
+                document.getElementById("demo10").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo10[0]}}" || "{{dict.demo10[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo10", "estado": "Disponible" });
+                    document.getElementById("demo10").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion11() {
+            var text11 = document.getElementById("demo11").innerHTML;
+            if (text11 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo11", "estado": "Ocupado" });
+                document.getElementById("demo11").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo11[0]}}" || "{{dict.demo11[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo11", "estado": "Disponible" });
+                    document.getElementById("demo11").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion12() {
+            var text12 = document.getElementById("demo12").innerHTML;
+            if (text12 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo12", "estado": "Ocupado" });
+                document.getElementById("demo12").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo12[0]}}" || "{{dict.demo12[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo12", "estado": "Disponible" });
+                    document.getElementById("demo12").innerHTML = "Disponible";
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        function mifuncion13() {
+            var text13 = document.getElementById("demo13").innerHTML;
+            if (text13 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo13", "estado": "Ocupado" });
+                document.getElementById("demo13").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo13[0]}}" || "{{dict.demo13[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo13", "estado": "Disponible" });
+                    document.getElementById("demo13").innerHTML = "Disponible";
                 }
 
-
-
-
-
-
-
-
-
-                function mifuncion13(){
-                    var text13 = document.getElementById("demo13").innerHTML;
-                    if(text13 == "Disponible"){
-    
-                        document.getElementById("demo13").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo13").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion14(){
-                    var text14 = document.getElementById("demo14").innerHTML;
-                    if(text14 == "Disponible"){
-    
-                        document.getElementById("demo14").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo14").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion15(){
-                    var text15 = document.getElementById("demo15").innerHTML;
-                    if(text15 == "Disponible"){
-    
-                        document.getElementById("demo15").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo15").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion16(){
-                    var text16 = document.getElementById("demo16").innerHTML;
-                    if(text16 == "Disponible"){
-    
-                        document.getElementById("demo16").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo16").innerHTML = "Disponible";
-                    } 
-                    }
-                function mifuncion17(){
-                    var text17 = document.getElementById("demo17").innerHTML;
-                    if(text17 == "Disponible"){
-    
-                        document.getElementById("demo17").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo17").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion18(){
-                    var text18 = document.getElementById("demo18").innerHTML;
-                    if(text18 == "Disponible"){
-    
-                        document.getElementById("demo18").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo18").innerHTML = "Disponible";
-                        
-                    }
+            }
+        }
+        function mifuncion14() {
+            var text14 = document.getElementById("demo14").innerHTML;
+            if (text14 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo14", "estado": "Ocupado" });
+                document.getElementById("demo14").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo14[0]}}" || "{{dict.demo14[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo14", "estado": "Disponible" });
+                    document.getElementById("demo14").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion15() {
+            var text15 = document.getElementById("demo15").innerHTML;
+            if (text15 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo15", "estado": "Ocupado" });
+                document.getElementById("demo15").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo15[0]}}" || "{{dict.demo15[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo15", "estado": "Disponible" });
+                    document.getElementById("demo15").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion16() {
+            var text16 = document.getElementById("demo16").innerHTML;
+            if (text16 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo16", "estado": "Ocupado" });
+                document.getElementById("demo16").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo16[0]}}" || "{{dict.demo16[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo16", "estado": "Disponible" });
+                    document.getElementById("demo16").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion17() {
+            var text17 = document.getElementById("demo17").innerHTML;
+            if (text17 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo17", "estado": "Ocupado" });
+                document.getElementById("demo17").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo17[0]}}" || "{{dict.demo17[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo17", "estado": "Disponible" });
+                    document.getElementById("demo17").innerHTML = "Disponible";
+                }
+            }
+        }
+        function mifuncion18() {
+            var text18 = document.getElementById("demo18").innerHTML;
+            if (text18 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo18", "estado": "Ocupado" });
+                document.getElementById("demo18").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo18[0]}}" || "{{dict.demo18[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo18", "estado": "Disponible" });
+                    document.getElementById("demo18").innerHTML = "Disponible";
                 }
 
+            }
+        }
 
 
 
@@ -292,189 +353,78 @@
 
 
 
-                function mifuncion19(){
-                    var text19 = document.getElementById("demo19").innerHTML;
-                    if(text19 == "Disponible"){
-    
-                        document.getElementById("demo19").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo19").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion20(){
-                    var text20 = document.getElementById("demo20").innerHTML;
-                    if(text20 == "Disponible"){
-    
-                        document.getElementById("demo20").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo20").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion21(){
-                    var text21 = document.getElementById("demo21").innerHTML;
-                    if(text21 == "Disponible"){
-    
-                        document.getElementById("demo21").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo21").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion22(){
-                    var text22 = document.getElementById("demo22").innerHTML;
-                    if(text22 == "Disponible"){
-    
-                        document.getElementById("demo22").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo22").innerHTML = "Disponible";
-                    } 
-                    }
-                function mifuncion23(){
-                    var text23 = document.getElementById("demo23").innerHTML;
-                    if(text23 == "Disponible"){
-    
-                        document.getElementById("demo23").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo23").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion24(){
-                    var text24 = document.getElementById("demo24").innerHTML;
-                    if(text24 == "Disponible"){
-    
-                        document.getElementById("demo24").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo24").innerHTML = "Disponible";
-                        
-                    }
+
+        function mifuncion19() {
+            var text19 = document.getElementById("demo19").innerHTML;
+            if (text19 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo19", "estado": "Ocupado" });
+                document.getElementById("demo19").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo19[0]}}" || "{{dict.demo19[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo19", "estado": "Disponible" });
+                    document.getElementById("demo19").innerHTML = "Disponible";
                 }
 
-
-
-
-
-
-
-
-
-
-
-                function mifuncion25(){
-                    var text25 = document.getElementById("demo25").innerHTML;
-                    if(text25 == "Disponible"){
-    
-                        document.getElementById("demo25").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo25").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion26(){
-                    var text26 = document.getElementById("demo26").innerHTML;
-                    if(text26 == "Disponible"){
-    
-                        document.getElementById("demo26").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo26").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion27(){
-                    var text27 = document.getElementById("demo27").innerHTML;
-                    if(text27 == "Disponible"){
-    
-                        document.getElementById("demo27").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo27").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion28(){
-                    var text28 = document.getElementById("demo28").innerHTML;
-                    if(text28 == "Disponible"){
-    
-                        document.getElementById("demo28").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo28").innerHTML = "Disponible";
-                    } 
-                    }
-                    function mifuncion29(){
-                    var text29 = document.getElementById("demo29").innerHTML;
-                    if(text29 == "Disponible"){
-    
-                        document.getElementById("demo29").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo29").innerHTML = "Disponible";
-                        
-                    }
+            }
+        }
+        function mifuncion20() {
+            var text20 = document.getElementById("demo20").innerHTML;
+            if (text20 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo20", "estado": "Ocupado" });
+                document.getElementById("demo20").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo20[0]}}" || "{{dict.demo20[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo20", "estado": "Disponible" });
+                    document.getElementById("demo20").innerHTML = "Disponible";
                 }
-                function mifuncion30(){
-                    var text30 = document.getElementById("demo30").innerHTML;
-                    if(text30 == "Disponible"){
-    
-                        document.getElementById("demo30").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo30").innerHTML = "Disponible";
-                    }   
-                    }
-               
-
-
-
-
-
-
-                function mifuncion31(){
-                    var text31 = document.getElementById("demo31").innerHTML;
-                    if(text31 == "Disponible"){
-    
-                        document.getElementById("demo31").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo31").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion32(){
-                    var text32 = document.getElementById("demo32").innerHTML;
-                    if(text32 == "Disponible"){
-    
-                        document.getElementById("demo32").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo32").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion33(){
-                    var text33 = document.getElementById("demo33").innerHTML;
-                    if(text33 == "Disponible"){
-    
-                        document.getElementById("demo33").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo33").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion34(){
-                    var text34 = document.getElementById("demo34").innerHTML;
-                    if(text34 == "Disponible"){
-    
-                        document.getElementById("demo34").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo34").innerHTML = "Disponible";
-                    } 
-                    }
-                function mifuncion35(){
-                    var text35 = document.getElementById("demo35").innerHTML;
-                    if(text35 == "Disponible"){
-    
-                        document.getElementById("demo35").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo35").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion36(){
-                    var text36 = document.getElementById("demo36").innerHTML;
-                    if(text36 == "Disponible"){
-    
-                        document.getElementById("demo36").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo36").innerHTML = "Disponible";
-                        
-                    }
+            }
+        }
+        function mifuncion21() {
+            var text21 = document.getElementById("demo21").innerHTML;
+            if (text21 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo21", "estado": "Ocupado" });
+                document.getElementById("demo21").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo21[0]}}" || "{{dict.demo21[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo21", "estado": "Disponible" });
+                    document.getElementById("demo21").innerHTML = "Disponible";
                 }
+            }
+        }
+        function mifuncion22() {
+            var text22 = document.getElementById("demo22").innerHTML;
+            if (text22 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo22", "estado": "Ocupado" });
+                document.getElementById("demo22").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo22[0]}}" || "{{dict.demo22[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo22", "estado": "Disponible" });
+                    document.getElementById("demo22").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion23() {
+            var text23 = document.getElementById("demo23").innerHTML;
+            if (text23 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo23", "estado": "Ocupado" });
+                document.getElementById("demo23").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo23[0]}}" || "{{dict.demo23[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo23", "estado": "Disponible" });
+                    document.getElementById("demo23").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion24() {
+            var text24 = document.getElementById("demo24").innerHTML;
+            if (text24 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo24", "estado": "Ocupado" });
+                document.getElementById("demo24").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo24[0]}}" || "{{dict.demo24[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo24", "estado": "Disponible" });
+                    document.getElementById("demo24").innerHTML = "Disponible";
+
+            }
+        }}
 
 
 
@@ -485,130 +435,306 @@
 
 
 
-                function mifuncion37(){
-                    var text37 = document.getElementById("demo37").innerHTML;
-                    if(text37 == "Disponible"){
-    
-                        document.getElementById("demo37").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo37").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion38(){
-                    var text38 = document.getElementById("demo38").innerHTML;
-                    if(text38 == "Disponible"){
-    
-                        document.getElementById("demo38").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo38").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion39(){
-                    var text39 = document.getElementById("demo39").innerHTML;
-                    if(text39 == "Disponible"){
-    
-                        document.getElementById("demo39").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo39").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion40(){
-                    var text40 = document.getElementById("demo40").innerHTML;
-                    if(text40 == "Disponible"){
-    
-                        document.getElementById("demo40").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo40").innerHTML = "Disponible";
-                    } 
-                    }
-                function mifuncion41(){
-                    var text41 = document.getElementById("demo41").innerHTML;
-                    if(text41 == "Disponible"){
-    
-                        document.getElementById("demo41").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo41").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion42(){
-                    var text42 = document.getElementById("demo42").innerHTML;
-                    if(text42 == "Disponible"){
-    
-                        document.getElementById("demo42").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo42").innerHTML = "Disponible";
-                        
-                    }
-                }
+
+        function mifuncion25() {
+            var text25 = document.getElementById("demo25").innerHTML;
+            if (text25 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo25", "estado": "Ocupado" });
+                document.getElementById("demo25").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo25[0]}}" || "{{dict.demo25[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo25", "estado": "Disponible" });
+                    document.getElementById("demo25").innerHTML = "Disponible";
+
+            }
+        }}
+        function mifuncion26() {
+            var text26 = document.getElementById("demo26").innerHTML;
+            if (text26 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo26", "estado": "Ocupado" });
+                document.getElementById("demo26").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo26[0]}}" || "{{dict.demo26[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo26", "estado": "Disponible" });
+                    document.getElementById("demo26").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion27() {
+            var text27 = document.getElementById("demo27").innerHTML;
+            if (text27 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo27", "estado": "Ocupado" });
+                document.getElementById("demo27").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo27[0]}}" || "{{dict.demo27[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo27", "estado": "Disponible" });
+                    document.getElementById("demo27").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion28() {
+            var text28 = document.getElementById("demo28").innerHTML;
+            if (text28 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo28", "estado": "Ocupado" });
+                document.getElementById("demo28").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo28[0]}}" || "{{dict.demo28[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo28", "estado": "Disponible" });
+                    document.getElementById("demo28").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion29() {
+            var text29 = document.getElementById("demo29").innerHTML;
+            if (text29 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo29", "estado": "Ocupado" });
+                document.getElementById("demo29").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo29[0]}}" || "{{dict.demo29[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo29", "estado": "Disponible" });
+                    document.getElementById("demo29").innerHTML = "Disponible";
+
+            }
+        }}
+        function mifuncion30() {
+            var text30 = document.getElementById("demo30").innerHTML;
+            if (text30 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo30", "estado": "Ocupado" });
+                document.getElementById("demo30").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo30[0]}}" || "{{dict.demo30[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo30", "estado": "Disponible" });
+                    document.getElementById("demo30").innerHTML = "Disponible";
+            }
+        }}
 
 
 
 
 
-                function mifuncion43(){
-                    var text43 = document.getElementById("demo43").innerHTML;
-                    if(text43 == "Disponible"){
-    
-                        document.getElementById("demo43").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo43").innerHTML = "Disponible";
-                        
-                    }}
-                function mifuncion44(){
-                    var text44 = document.getElementById("demo44").innerHTML;
-                    if(text44 == "Disponible"){
-    
-                        document.getElementById("demo44").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo44").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion45(){
-                    var text45 = document.getElementById("demo45").innerHTML;
-                    if(text45 == "Disponible"){
-    
-                        document.getElementById("demo45").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo45").innerHTML = "Disponible";
-                    }
-                    }
-                function mifuncion46(){
-                    var text46 = document.getElementById("demo46").innerHTML;
-                    if(text46 == "Disponible"){
-    
-                        document.getElementById("demo46").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo46").innerHTML = "Disponible";
-                    } 
-                    }
-                function mifuncion47(){
-                    var text47 = document.getElementById("demo47").innerHTML;
-                    if(text47 == "Disponible"){
-    
-                        document.getElementById("demo47").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo47").innerHTML = "Disponible";
-                    }   
-                    }
-                function mifuncion48(){
-                    var text48 = document.getElementById("demo48").innerHTML;
-                    if(text48 == "Disponible"){
-    
-                        document.getElementById("demo48").innerHTML = "Ocupado";
-                    }else{
-                        document.getElementById("demo48").innerHTML = "Disponible";
-                        
-                    }
-                }
-                
-                </script>
-                {% block content %}
-                {%for intem in list}
-                    document.getElementById(intem).innerHTML = "Ocupado";
-                {% endfor %}
-                {% endblock %}
-        </body>
-        
+
+
+        function mifuncion31() {
+            var text31 = document.getElementById("demo31").innerHTML;
+            if (text31 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo31", "estado": "Ocupado" });
+                document.getElementById("demo31").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo31[0]}}" || "{{dict.demo31[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo31", "estado": "Disponible" });
+                    document.getElementById("demo31").innerHTML = "Disponible";
+
+            }
+        }}
+        function mifuncion32() {
+            var text32 = document.getElementById("demo32").innerHTML;
+            if (text32 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo32", "estado": "Ocupado" });
+                document.getElementById("demo32").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo32[0]}}" || "{{dict.demo32[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo32", "estado": "Disponible" });
+                    document.getElementById("demo32").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion33() {
+            var text33 = document.getElementById("demo33").innerHTML;
+            if (text33 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo33", "estado": "Ocupado" });
+                document.getElementById("demo33").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo33[0]}}" || "{{dict.demo33[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo33", "estado": "Disponible" });
+                    document.getElementById("demo33").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion34() {
+            var text34 = document.getElementById("demo34").innerHTML;
+            if (text34 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo34", "estado": "Ocupado" });
+                document.getElementById("demo34").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo34[0]}}" || "{{dict.demo34[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo34", "estado": "Disponible" });
+                    document.getElementById("demo34").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion35() {
+            var text35 = document.getElementById("demo35").innerHTML;
+            if (text35 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo35", "estado": "Ocupado" });
+                document.getElementById("demo35").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo35[0]}}" || "{{dict.demo35[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo35", "estado": "Disponible" });
+                    document.getElementById("demo35").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion36() {
+            var text36 = document.getElementById("demo36").innerHTML;
+            if (text36 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo36", "estado": "Ocupado" });
+                document.getElementById("demo36").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo36[0]}}" || "{{dict.demo36[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo36", "estado": "Disponible" });
+                    document.getElementById("demo36").innerHTML = "Disponible";
+
+            }
+        }}
+
+
+
+
+
+
+
+
+
+
+        function mifuncion37() {
+            var text37 = document.getElementById("demo37").innerHTML;
+            if (text37 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo37", "estado": "Ocupado" });
+                document.getElementById("demo37").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo37[0]}}" || "{{dict.demo37[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo37", "estado": "Disponible" });
+                    document.getElementById("demo37").innerHTML = "Disponible";
+
+            }
+        }}
+        function mifuncion38() {
+            var text38 = document.getElementById("demo38").innerHTML;
+            if (text38 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo38", "estado": "Ocupado" });
+                document.getElementById("demo38").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo38[0]}}" || "{{dict.demo38[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo38", "estado": "Disponible" });
+                    document.getElementById("demo38").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion39() {
+            var text39 = document.getElementById("demo39").innerHTML;
+            if (text39 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo39", "estado": "Ocupado" });
+                document.getElementById("demo39").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo39[0]}}" || "{{dict.demo39[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo39", "estado": "Disponible" });
+                    document.getElementById("demo39").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion40() {
+            var text40 = document.getElementById("demo40").innerHTML;
+            if (text40 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo40", "estado": "Ocupado" });
+                document.getElementById("demo40").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo40[0]}}" || "{{dict.demo40[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo40", "estado": "Disponible" });
+                    document.getElementById("demo40").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion41() {
+            var text41 = document.getElementById("demo41").innerHTML;
+            if (text41 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo41", "estado": "Ocupado" });
+                document.getElementById("demo41").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo41[0]}}" || "{{dict.demo41[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo41", "estado": "Disponible" });
+                    document.getElementById("demo41").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion42() {
+            var text42 = document.getElementById("demo42").innerHTML;
+            if (text42 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo42", "estado": "Ocupado" });
+                document.getElementById("demo42").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo42[0]}}" || "{{dict.demo42[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo42", "estado": "Disponible" });
+                    document.getElementById("demo42").innerHTML = "Disponible";
+
+            }
+        }}
+
+
+
+
+
+        function mifuncion43() {
+            var text43 = document.getElementById("demo43").innerHTML;
+            if (text43 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo43", "estado": "Ocupado" });
+                document.getElementById("demo43").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo43[0]}}" || "{{dict.demo43[0]}}" == '') {
+                    
+                $.post("test", { "user": "", "id": "demo43", "estado": "Disponible" });
+                    document.getElementById("demo43").innerHTML = "Disponible";
+
+            }
+        }}
+        function mifuncion44() {
+            var text44 = document.getElementById("demo44").innerHTML;
+            if (text44 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo44", "estado": "Ocupado" });
+                document.getElementById("demo44").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo44[0]}}" || "{{dict.demo44[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo44", "estado": "Disponible" });
+                    document.getElementById("demo44").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion45() {
+            var text45 = document.getElementById("demo45").innerHTML;
+            if (text45 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo45", "estado": "Ocupado" });
+                document.getElementById("demo45").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo45[0]}}" || "{{dict.demo45[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo45", "estado": "Disponible" });
+                    document.getElementById("demo45").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion46() {
+            var text46 = document.getElementById("demo46").innerHTML;
+            if (text46 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo46", "estado": "Ocupado" });
+                document.getElementById("demo46").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo46[0]}}" || "{{dict.demo46[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo46", "estado": "Disponible" });
+                    document.getElementById("demo46").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion47() {
+            var text47 = document.getElementById("demo47").innerHTML;
+            if (text47 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo47", "estado": "Ocupado" });
+                document.getElementById("demo47").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo47[0]}}" || "{{dict.demo47[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo47", "estado": "Disponible" });
+                    document.getElementById("demo47").innerHTML = "Disponible";
+            }
+        }}
+        function mifuncion48() {
+            var text48 = document.getElementById("demo48").innerHTML;
+            if (text48 == "Disponible") {
+                $.post("test", { "user": nom, "id": "demo48", "estado": "Ocupado" });
+                document.getElementById("demo48").innerHTML = "Ocupado";
+            } else {
+                if (nom == "{{dict.demo48[0]}}" || "{{dict.demo48[0]}}" == '') {
+                $.post("test", { "user": "", "id": "demo48", "estado": "Disponible" });
+                    document.getElementById("demo48").innerHTML = "Disponible";
+
+            }
+        }
+        }
+    </script>
+</body>
+
 
 
 </html>

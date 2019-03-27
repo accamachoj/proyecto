@@ -1,26 +1,168 @@
-import MySQLdb
 import sqlite3
-import mysql.connector
-from flask import request
 
-class DBhelper():
-     def __init__(self):
+class DBHelper():
+    def __init__(self):
         pass
-        dato = {              
-        'host':'127.0.0.1',    # tu host, usualmente localhost
-        'user':'root',         # tu usuario
-        'password':'',           # tu password
-        'database':'proyecto'}       # el nombre de la base de datos
+    
+    def crearTablalogin(self):
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        c.execute("CREATE TABLE login(usuario text, contrasenia text)")
+        conn.commit()
+        conn.close()
+    
+    def crearTablaReserva(self):
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        c.execute("CREATE TABLE reserva(id text, usuario text, estado text)")
+        conn.commit()
+        conn.close()
 
-        conexion = mysql.connector.connect(** dato)
-        cursor = conexion.cursor()
-        def insertar(usuario, contrasenia):
-            conexion = mysql.connector.connect(** dato)
-            cursor = conexion.cursor()
-            valores ="INSERT INTO login(usuario, contrasenia)VALUES(usuario = "request.form[usu]", contraseni = "request.form[contra]")"
-            try:
-                cursor.execute(valores)
-                conexion.commit()
-            except:
-                print("nell")
-            conexion.close()
+    def insertarlogin(self):
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        c.execute("INSERT INTO login VALUES ('liss', '123456')")
+        conn.commit()
+        conn.close()
+
+    
+    def insertarReserva(self, _id, _usuario, _estado):
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        c.execute("INSERT INTO reserva VALUES (?, ?, ?)",[_id, _usuario, _estado])
+        conn.commit()
+        conn.close()
+
+    def leer(self, _id):
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        c.execute("SELECT * FROM reserva where id = ?" , (_id,))
+        u = c.fetchone()
+        conn.close()
+        return u
+
+    def todos(self):        
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        c.execute("SELECT * FROM reserva")
+        u = c.fetchall()
+        conn.close()
+        return u
+
+    def update(self, _user, _id, _estado):
+        print("UPDATING: " +" id:" + _id +",user: "+ _user +",estado:"+ _estado)
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        cadena = "UPDATE reserva SET usuario='"+_user+"', estado='"+_estado+"' WHERE id='"+_id+"'"
+        print(cadena)
+        v = c.execute(cadena)
+        conn.commit()
+        conn.close()
+
+    def quemada(self):
+        conn = sqlite3.connect('data.db')
+        c = conn.cursor()
+        c.execute("DROP TABLE IF EXISTS reserva")
+        conn.commit()
+        c.execute("CREATE TABLE reserva(id text, usuario text, estado text)")
+        conn.commit()
+        c.execute("INSERT INTO reserva VALUES ('demo1', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo2', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo3', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo4', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo5', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo6', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo7', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo8', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo9', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo10', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo11', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo12', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo13', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo14', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo15', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo16', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo17', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo18', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo19', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo20', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo21', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo22', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo23', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo24', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo25', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo26', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo27', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo28', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo29', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo30', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo31', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo32', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo33', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo34', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo35', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo36', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo37', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo38', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo39', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo40', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo41', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo42', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo43', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo44', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo45', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo46', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo47', '', 'Disponible')")
+        c.execute("INSERT INTO reserva VALUES ('demo48', '', 'Disponible')")
+        conn.commit()
+        conn.close()
+        '''
+        db.insertarReserva('demo1','','Disponible')
+        db.insertarReserva('demo2','','Disponible')
+        db.insertarReserva('demo3','','Disponible')
+        db.insertarReserva('demo4','','Disponible')
+        db.insertarReserva('demo5','','Disponible')
+        db.insertarReserva('demo6','','Disponible')
+        db.insertarReserva('demo7','','Disponible')
+        db.insertarReserva('demo8','','Disponible')
+        db.insertarReserva('demo9','','Disponible')
+        db.insertarReserva('demo10','','Disponible')
+        db.insertarReserva('demo11','','Disponible')
+        db.insertarReserva('demo12','','Disponible')
+        db.insertarReserva('demo13','','Disponible')
+        db.insertarReserva('demo14','','Disponible')
+        db.insertarReserva('demo15','','Disponible')
+        db.insertarReserva('demo16','','Disponible')
+        db.insertarReserva('demo17','','Disponible')
+        db.insertarReserva('demo18','','Disponible')
+        db.insertarReserva('demo19','','Disponible')
+        db.insertarReserva('demo20','','Disponible')
+        db.insertarReserva('demo21','','Disponible')
+        db.insertarReserva('demo22','','Disponible')
+        db.insertarReserva('demo23','','Disponible')
+        db.insertarReserva('demo24','','Disponible')
+        db.insertarReserva('demo25','','Disponible')
+        db.insertarReserva('demo26','','Disponible')
+        db.insertarReserva('demo27','','Disponible')
+        db.insertarReserva('demo28','','Disponible')
+        db.insertarReserva('demo29','','Disponible')
+        db.insertarReserva('demo30','','Disponible')
+        db.insertarReserva('demo31','','Disponible')
+        db.insertarReserva('demo32','','Disponible')
+        db.insertarReserva('demo33','','Disponible')
+        db.insertarReserva('demo34','','Disponible')
+        db.insertarReserva('demo35','','Disponible')
+        db.insertarReserva('demo36','','Disponible')
+        db.insertarReserva('demo37','','Disponible')
+        db.insertarReserva('demo38','','Disponible')
+        db.insertarReserva('demo39','','Disponible')
+        db.insertarReserva('demo40','','Disponible')
+        db.insertarReserva('demo41','','Disponible')
+        db.insertarReserva('demo42','','Disponible')
+        db.insertarReserva('demo43','','Disponible')
+        db.insertarReserva('demo44','','Disponible')
+        db.insertarReserva('demo45','','Disponible')
+        db.insertarReserva('demo46','','Disponible')
+        db.insertarReserva('demo47','','Disponible')
+        db.insertarReserva('demo48','','Disponible')
+'''
