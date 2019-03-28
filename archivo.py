@@ -20,6 +20,10 @@ def inicio():
     print(diccionario)
     return render_template('index.html', dict=diccionario)
 '''
+
+
+
+
 @app.route("/tabla")
 def index():
     return render_template('../index.html')
@@ -36,16 +40,26 @@ def test():
     if request.method == 'GET':
         return render_template("test.html", dict = diccionario)
     elif request.method == 'POST':
+        print("HOLAAAAAAAAAAAAAAAA")
         if "user" in request.form:
             print(request.form['id'])
             db.update(request.form['user'], request.form['id'], request.form['estado'])
             print("hola desde el post: " + request.form["user"])
         if "uno" in request.form:
             nombre = request.form['uno']
+            try:
+                print(nombre)
+                if not nombre.isalnum():
+                    raise Exception
+            except:
+                print("Oiga, usted es un desgraciado")
+                return render_template("test.html", dict = diccionario)
             db.insertarlogin(request.form['uno'], request.form['dos']) 
             print(request.form['uno'], request.form['dos'])
             #d = {'demo1' : ['liss', 'ocupado'], 'demo2' : ['liss', 'ocupado']}
             return render_template("index.html" , nombre = nombre, dict = diccionario)
-    return '200'
+        #return '200'
+        
+        return render_template("test.html", dict = diccionario)
 
 app.run(debug=True, port=8000)
